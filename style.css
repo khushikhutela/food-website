@@ -330,7 +330,7 @@ p{
 /* 10 Book Food */
 .book-food{
     width:100%;
-    background:url(/images/bg-3.jpg) no-repeat center;
+    background:url(images/bg-3.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     background-position: 0 4.4945rem;
