@@ -1,0 +1,96 @@
+@media (max-width:991px){
+    /* custom css */
+    h1{
+        font-size: 3rem;
+      
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .text.content{
+        width: 80%;
+    }
+    .wrapper{
+        padding-top: 4.25rem;
+        padding-bottom: 3.25rem;
+    }
+
+    /* navbar */
+    .navigation-wrap{
+        text-align: center;
+        background-color: var(--black-color);
+    }
+    .navigation-wrap .navbar-toggler{
+        color: var(--white-color);
+    }
+    .navigation-wrap .nav-link{
+        line-height: 1.875rem;
+    }
+    /*  top-banner  */
+    .top-banner{
+        padding: 6.375rem 0 4.375rem;
+    }
+
+    .about-section ul li::before{
+        position: absolute;
+        right: 28rem;
+        color: var(--text-primary);
+        font-size: 1.25rem;
+        font-family: "Font Awesome 5 free";
+        content: "\f00c ";
+        display: inline-block;
+        font-weight: 900;
+    
+    }
+/*  testimonial  */
+    .testimonial-section .carousel-item .carousel-caption p{
+        padding: 0;
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width:767px){
+    h1{
+        font-size: 3rem;
+    
+    }
+    .row{
+        padding: 0rem;
+        margin: 0rem;
+    }
+    
+    .navigation-wrap .navber-brand img{
+        width:12rem;
+    }
+
+    .counter-section .row{
+        width: 100%;
+        padding: 2.5rem;
+    }
+    .about-section ul li::before{
+        position: absolute;
+        right: 20rem;
+        color: var(--text-primary);
+        font-size: 1.25rem;
+        font-family: "Font Awesome 5 free";
+        content: "\f00c ";
+        display: inline-block;
+        font-weight: 900;
+    
+    }
+    /*  story section  */
+    .story-section{
+        height: auto;
+        padding: 3rem 0;
+    }
+    .testimonial-section .carousel-item{
+        padding: 11rem 3.125rem;
+    }
+}
+
+@media(max-width:330px){
+    .testimonial-section .carousel-item{
+        padding: 13rem 3.125rem;
+    }
+   
+}

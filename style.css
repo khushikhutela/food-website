@@ -1,0 +1,363 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: var(--primary-color) !important;
+}
+ul{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* variable define */
+:root{
+    --primary-color: #00c684;
+    --secondry-color: #151b20;
+    --white-color: #fff;
+    --black-color: #0e1317;
+
+    --text-primary: #00c684;
+    --text-secondy: #151b20;
+    --text-white: #fff;
+    --text-color: #cfd3d7;
+    --text-gray: #999;
+
+    --base-font: "Roboto", sans-serif;
+    --heading-font: "Lobster two", sans-serif;
+}
+
+
+/* custom css */
+
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    font-family: var(--base-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+::-webkit-scrollbar{
+    width: .425rem;
+}
+::-webkit-scrollbar-track{
+    background: var(--white-color);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+h1{
+    font-size: 4.375rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    font-family: var(--heading-font);
+    color: var(--text-white);
+    text-transform: capitalize;
+}
+h2{
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    font-family: var(--heading-font);
+    color: var(--text-white);
+    text-transform: capitalize;
+}
+h4{
+    font-size: 1.125rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    font-family: var(--heading-font);
+    color: var(--text-secondy);
+    text-transform: capitalize;
+}
+h5{
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-family: var(--heading-font);
+    color: var(--text-primary);
+    text-transform: capitalize;
+}
+p{
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 0.0625rem;
+}
+.main-btn{
+    padding: 0.625rem 1.875rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0 0.125rem 0.625rem -0.625rem rgba(0, 0, 0, 10%);
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+    background-color: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+    color: var(--text-white);
+}
+.main-btn:hover{
+    background-color: transparent;
+    color: var(--text-primary);
+}
+
+.wrapper{
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+.text-content{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*  navbar design  */
+
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+}
+.navigation-wrap .navbar-brand img{
+    width: 13rem;
+
+}
+.navigation-wrap .nav-item{
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+.nav-link{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--text-color);
+    letter-spacing: 0.0625rem;
+
+}
+.navigation-wrap .main-btn{
+    padding: 0.315rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+
+}
+
+/* change navbar styling on scroll  */
+.navigation-wrap.scroll-on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100;
+    background: var(--black-color);
+    box-shadow: 0 0.125rem 1.75rem 0 rgba(0, 0, 0, 09);
+    transition: all 0.15s ease-in-out 0s;
+}
+
+/*  top banner  */
+.top-banner{
+    width: 100%;
+    height: 100%;
+    background: url(images/bg-1.jpg)no-repeat;
+    background-size: cover;
+    padding: 14.875rem 0 5.375rem;
+}
+
+/*  counter design  */
+.counter-section{
+    background-color: var(--black-color);
+    padding: 2.5rem 0;
+}
+.counter-section h2{
+    color: var(--primary-color);
+}
+.counter-section p{
+    color: var(--text-white);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+/*  about section  */
+.about-section{
+    background-color: var(--black-color);
+}
+.about-section ul li{
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 2rem;
+    position: relative;
+    margin-left: 1.875rem;
+}
+
+.about-section ul li::before{
+    position: absolute;
+    right: 36.5rem;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-family: "Font Awesome 5 free";
+    content: "\f00c ";
+    display: inline-block;
+    font-weight: 900;
+
+}
+
+/*  story section  */
+.story-section{
+    width: 100%;
+    height: 28.125rem;
+    background: url(images/bg-2.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 6.25rem;
+    text-align: center;
+}
+
+
+/* Explore Foos Section */
+.explore-food{
+    background-color: var(--secondry-color);
+}
+.explore-food .card{
+    background-color: transparent;
+    border-radius: 0.9375rem;
+    border:0.125rem dashed var(--primary-color);
+}
+.explore-food .card img{
+    border-radius: 0.9375rem 0.975rem 0 0;
+    object-fit: cover;
+}
+.explore-food .card span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:var(--text-primary);
+    padding-bottom:1rem;
+    border-bottom:0.0625rem solid var(--primary-color);
+}
+.explore-food .card span del{
+    color: var(--text-gray);
+    margin-left: 0.5rem;
+}
+
+/* 8 testimonial-section */
+.testimonial-section{
+    background:url("images/bg-4.jpg") no-repeat center top;
+    background-size: cover;
+    }
+.testimonial-section .carousel-item{
+    margin-top:3rem;
+    padding: 10rem 3.125rem;
+    background-color:var(--black-color);
+    border-radius: 0.9375rem;
+    text-align: center;
+}
+.carousel-caption img{
+    max-width: 5rem;
+    border-radius: 50%;
+    padding:0.3125rem;
+    border: 0.125rem solid var(--primary-color);
+}
+.testimonial-section .carousel-item .carousel-caption p{
+    font-size:1.3125rem;
+    line-height: 2.0625rem;
+    padding:0.625rem 11%;
+}
+       
+.testimonial-section.carousel-indicators{
+    bottom:-3.9125rem;
+}    
+.testimonial-section .carousel-indicators button{
+    width:0.9375rem;
+    height:0.9375rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    margin-top:10px;
+}
+
+/* 9 Team section */
+.team{
+    background-color:var(--secondry-color);
+}
+.team .card{
+    background-color: var(--black-color);
+    border-radius: 0.625rem;
+    border:0.25rem solid var(--primary-color);
+    text-align: center;
+}
+.team .card img{
+    border-radius: 0.625rem 0.625rem 0 0;
+}
+.team h4{
+    color: var(--text-primary);
+    text-transform: uppercase;
+}
+.team h6,
+.team p{
+    color:var(--text-white)
+}
+.social-icon i{
+    font-size:1.125rem;
+    transition:0.3s all ease;
+    margin:0.3125rem;
+    background-color:var(--primary-color);
+    color:var(--text-white);
+    border-radius: 50%;
+    width:2.1875rem;
+    height:2.1875rem;
+    line-height: 2.1875rem;
+}
+.social-icon i:hover{
+    background-color: var(--white-color);
+    color:var(--text-primary);
+}
+
+/* 10 Book Food */
+.book-food{
+    width:100%;
+    background:url(/images/bg-3.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 4.4945rem;
+    padding: 4.375rem 0;
+    overflow: hidden;
+}
+.book-food h2{
+    color:var(--text-primary)
+}
+
+.download-app{
+    width: 100%;
+    background:url(images/bg-5.jpg)no-repeat center;
+    background-size: cover;
+}
+
+/* footer section */
+.footer{
+    background-color: var(--black-color);
+}
+.footer .footer-link{
+    font-size: 1rem;
+    color: var(--text-white);
+    padding: 0 1.875rem;
+}
+.footer a{
+    font-size: 1.5rem;
+    color: var(--text-white) ;
+    padding: 0 0.4rem;
+}
